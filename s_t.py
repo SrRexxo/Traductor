@@ -93,17 +93,17 @@ if result:
         ("Inglés", "Español", "Portugues", "Italiano", "Frances", "Japonés"),
     )
     if out_lang == "Inglés":
-        input_language = "en"
+        output_language = "en"
     elif out_lang == "Español":
-        input_language = "es"
+        output_language = "es"
     elif out_lang == "Portugues":
-        input_language = "pt"
+        output_language = "pt"
     elif out_lang == "Italiano":
-        input_language = "it"
+        output_language = "it"
     elif out_lang == "Frances":
-        input_language = "fr"
+        output_language = "fr"
     elif out_lang == "Japonés":
-        input_language = "ja"
+        output_language = "ja"
 
     
     english_accent = st.selectbox(
