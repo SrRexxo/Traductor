@@ -92,17 +92,17 @@ if result:
         "Selecciona el lenguaje de salida",
         ("Inglés", "Español", "Portugues", "Italiano", "Frances", "Japonés"),
     )
-    if in_lang == "Inglés":
+    if out_lang == "Inglés":
         input_language = "en"
-    elif in_lang == "Español":
+    elif out_lang == "Español":
         input_language = "es"
-    elif in_lang == "Portugues":
+    elif out_lang == "Portugues":
         input_language = "pt"
-    elif in_lang == "Italiano":
+    elif out_lang == "Italiano":
         input_language = "it"
-    elif in_lang == "Frances":
+    elif out_lang == "Frances":
         input_language = "fr"
-    elif in_lang == "Japonés":
+    elif out_lang == "Japonés":
         input_language = "ja"
 
     
