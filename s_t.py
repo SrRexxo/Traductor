@@ -90,20 +90,21 @@ if result:
     
     out_lang = st.selectbox(
         "Selecciona el lenguaje de salida",
-        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
+        ("Inglés", "Español", "Portugues", "Italiano", "Frances", "Japonés"),
     )
-    if out_lang == "Inglés":
-        output_language = "en"
-    elif out_lang == "Español":
-        output_language = "es"
-    elif out_lang == "Bengali":
-        output_language = "bn"
-    elif out_lang == "Coreano":
-        output_language = "ko"
-    elif out_lang == "Mandarín":
-        output_language = "zh-cn"
-    elif out_lang == "Japonés":
-        output_language = "ja"
+    if in_lang == "Inglés":
+        input_language = "en"
+    elif in_lang == "Español":
+        input_language = "es"
+    elif in_lang == "Portugues":
+        input_language = "pt"
+    elif in_lang == "Italiano":
+        input_language = "it"
+    elif in_lang == "Frances":
+        input_language = "fr"
+    elif in_lang == "Japonés":
+        input_language = "ja"
+
     
     english_accent = st.selectbox(
         "Selecciona el acento",
