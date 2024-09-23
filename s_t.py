@@ -16,7 +16,7 @@ from googletrans import Translator
 
 
 st.title("TRADUCTOR.")
-st.subheader("Escucho lo que quieres traducir.")
+st.subheader("Presiona el microfono y di lo que quieres traducir")
 
 
 image = Image.open('OIG7.JPG')
@@ -142,7 +142,7 @@ if result:
     def text_to_speech(input_language, output_language, text, tld):
         translation = translator.translate(text, src=input_language, dest=output_language)
         trans_text = translation.text
-        tts = gTTS(trans_text, lang=output_language, tld=tld, slow=False)
+        tts = gTTS(trans_text, lang=output_language, tld=tld, slow=True)
         try:
             my_file_name = text[0:20]
         except:
@@ -153,7 +153,7 @@ if result:
     
     display_output_text = st.checkbox("Mostrar el texto")
     
-    if st.button("convertir"):
+    if st.button("Traducción"):
         result, output_text = text_to_speech(input_language, output_language, text, tld)
         audio_file = open(f"temp/{result}.mp3", "rb")
         audio_bytes = audio_file.read()
